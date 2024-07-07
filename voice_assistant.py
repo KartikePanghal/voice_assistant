@@ -96,7 +96,6 @@ def send_email(command):
 
 def send_email_via_smtp(subject, body):
     try:
-        # You will need to update these details with your email server details
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
         server.login("your_email@gmail.com", "your_password")
